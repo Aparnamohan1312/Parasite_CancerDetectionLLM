@@ -11,13 +11,13 @@ Explanation: A simple binary matrix representing the presence or absence of dye 
 Storage Estimate:
 For a 100,000x100,000 image, the storage size is approximately 100,000 * 100,000 bits = 11.92 MB.
 
-3. Simulated Image Generation:
+2. Simulated Image Generation:
 The ParasiteDataset class generates simulated microscope images using the Quadtree representation and simulated dye sensor images using a binary matrix. These images are generated realistically to simulate actual images captured by the microscope and dye sensor.
 
-4. Cancer Detection Function:
+3. Cancer Detection Function:
 The has_cancer function computes whether a parasite has cancer by comparing the total dye area detected in the parasite's body to the total area occupied by the parasite in the microscope image.
 
-5. Other Compression Techniques:
+4. Other Compression Techniques:
 Microscope Images:
 Huffman Coding: Use Huffman coding to encode the Quadtree nodes based on their frequency of occurrence. This can further reduce the storage size of the Quadtree representation.
 Impact on Runtime:
@@ -42,7 +42,7 @@ Estimated size after delta encoding: Reduction depends on the image characterist
 Impact on Runtime:
 Delta encoding: Minimal impact on runtime as it involves simple arithmetic operations.
 
-6. LLM Techniques Used:
+5. LLM Techniques Used:
 Transformer Encoder Layer:
 The encoder layer of the transformer model is used to process the input images and extract features.
 It utilizes attention mechanisms to focus on relevant parts of the input images, aiding in cancer detection.
